@@ -1,16 +1,22 @@
-import { View, Text , TouchableOpacity} from 'react-native'
-import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-const NewsScreen = () => {
-  return (
-    <View>
-      <TouchableOpacity >
-      <Icon name="theme-light-dark" size={24} color="#007FFF" />
+import { View, Text } from 'react-native'
+import React , {useContext} from 'react';
+import { NewsContext } from '../../API/Context';
 
-      </TouchableOpacity>
-      <Text>News  Screen</Text>
+
+const NewsScreen = () => {
+//  const{
+//    news: {articles},
+//  } = useContext(NewsContext);
+const data = useContext(NewsContext);
+console.log(data)
+
+
+  return (
+
+    <View>
+      <Text>NewsScreen</Text>
     </View>
   )
 }
 
-export default NewsScreen;
+export default NewsScreen
