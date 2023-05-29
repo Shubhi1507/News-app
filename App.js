@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import Context from './src/API/Context';
-
 import InshortTab from './src/Components/InshortTab';
 
 function App() {
@@ -19,10 +18,9 @@ const styles = StyleSheet.create({
 });
 
 export default () => {
-    return(
-<Context>
-    <App/>
-</Context>
-
-);
-    };
+  return (
+    <Context>
+      <App />
+    </Context>
+  );
+};
